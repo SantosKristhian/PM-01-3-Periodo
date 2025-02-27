@@ -1,1 +1,2 @@
-# PM-01--3-periodo
+# Repositório do projeto Mensal do 3º semestre da faculdade UniAmérica.
+
