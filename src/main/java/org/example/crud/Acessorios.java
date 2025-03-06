@@ -8,9 +8,14 @@ public class Acessorios extends Produto {
         this.tipo=tipo;
         }
 
-    public void AtualizarEstoque(int qntVendida){
-        setQntStoque(getQntStoque() - qntVendida );
-        System.out.println("Estoque de acessorios atualizado");
+
+    public void AtualizarEstoque(int qntVendida) {
+        if (qntVendida > getQntStoque()) {
+            System.out.println("Erro: Estoque insuficiente!");
+        } else {
+            setQntStoque(getQntStoque() - qntVendida );
+            System.out.println("Estoque atualizado! Novo estoque de Acessorios: " + getQntStoque());
+        }
     }
 
         public String getTipo() {

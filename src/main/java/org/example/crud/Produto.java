@@ -11,10 +11,8 @@ public abstract class Produto {
         this.qntStoque=qntStoque;
 
     }
-    public void AtualizarEstoque(int qntVendida){
-        qntVendida-= qntStoque;
-        System.out.println("Estoque atualizado");
-    }
+
+    public abstract void AtualizarEstoque(int qntVendida);
 
     public String getNome() {
         return nome;

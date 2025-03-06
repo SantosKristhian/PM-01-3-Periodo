@@ -9,11 +9,16 @@ public class Bicicleta extends Produto{
         this.marca=marca;
         this.modelo=modelo;
     }
-
-        public void AtualizarEstoque(int qntVendida){
+    public void AtualizarEstoque(int qntVendida) {
+        if (qntVendida > getQntStoque()) {
+            System.out.println("Erro: Estoque insuficiente!");
+        } else {
             setQntStoque(getQntStoque() - qntVendida );
-            System.out.println("Estoque de bicicleta atualizado");
+            System.out.println("Estoque atualizado! Novo estoque de bicicletas: " + getQntStoque());
         }
+    }
+
+
 
     public String getMarca() {
         return marca;
