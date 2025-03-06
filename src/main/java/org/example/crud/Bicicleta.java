@@ -11,7 +11,10 @@ public class Bicicleta extends Produto{
     }
 
     public void atualizarEstoque(int quantidade) {
-        setQntStoque(-quantidade) ;}
+        if(quantidade>getQntStoque()){
+            throw new RuntimeException("Bicicleta(s) insuficiente(s)");
+        }
+        setQntStoque(getQntStoque()-quantidade) ;}
 
     public String getMarca() {
         return marca;

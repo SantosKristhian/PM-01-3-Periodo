@@ -10,8 +10,10 @@ public class Main {
 
         Bicicleta bike001 = new Bicicleta("Montadinha", 100, 20, "Monark", "2024");
 
-        bike001.atualizarEstoque(10);
+        bike001.atualizarEstoque(5);
         System.out.println(bike001.getQntStoque());
+        estoque.adicionarProduto(bike001);
+        estoque.listarProdutos();
 
 
 

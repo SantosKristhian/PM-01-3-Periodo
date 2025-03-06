@@ -18,8 +18,8 @@ public class Estoque {
     }
 
     public void listarProdutos() {
-        for (Produto produto : produtos) {
-            System.out.println(produto.getNome() + " - Quantidade: " + produto.getQntStoque());
+        for (Produto x : produtos) {
+            System.out.println(x.getNome() + " - Quantidade: " + x.getQntStoque());
         }
     }
 }

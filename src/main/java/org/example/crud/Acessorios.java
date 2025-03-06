@@ -8,8 +8,11 @@ public class Acessorios extends Produto {
         this.tipo=tipo;
         }
 
-        public void atualizarEstoque(int quantidade) {
-        setQntStoque(-quantidade) ;}
+    public void atualizarEstoque(int quantidade) {
+        if(quantidade>getQntStoque()){
+            throw new RuntimeException("Acessorio(s) insuficiente(s)");
+        }
+        setQntStoque(getQntStoque()-quantidade) ;}
 
         public String getTipo() {
             return tipo;
