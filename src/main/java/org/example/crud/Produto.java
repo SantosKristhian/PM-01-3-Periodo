@@ -12,7 +12,16 @@ public abstract class Produto {
 
     }
 
-    public abstract void AtualizarEstoque(int qntVendida);
+    public abstract void atualizarEstoque(int quantidade);
+
+    public void setQntStoque(int qntStoque) {
+        this.qntStoque = qntStoque;
+    }
+
+    public int getQntStoque() {
+        return qntStoque;
+    }
+
 
     public String getNome() {
         return nome;
@@ -30,13 +39,9 @@ public abstract class Produto {
         this.price = price;
     }
 
-    public int getQntStoque() {
-        return qntStoque;
-    }
 
-    public void setQntStoque(int qntStoque) {
-        this.qntStoque = qntStoque;
-    }
+
+
 
 
 
