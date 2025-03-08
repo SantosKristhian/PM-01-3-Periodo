@@ -1,5 +1,8 @@
 package org.example.crud;
 
+import java.util.ArrayList;  // Para usar a classe ArrayList
+import java.util.List;       // Para usar a interface List
+
 
 public class VendaSimples implements InterfaceVenda {
     private List<Produto> produtosVendidos;
