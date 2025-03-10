@@ -22,6 +22,9 @@ public class Estoque {
             System.out.println(x.getNome() + " - Quantidade: " + x.getQntStoque());
         }
     }
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
 }
 
 

@@ -10,6 +10,7 @@ public class Bicicleta extends Produto{
         this.modelo=modelo;
     }
 
+
     public void atualizarEstoque(int quantidade) {
         if(quantidade>getQntStoque()){
             throw new RuntimeException("Bicicleta(s) insuficiente(s)");

@@ -12,6 +12,7 @@ public abstract class Produto {
 
     }
 
+
     public abstract void atualizarEstoque(int quantidade);
 
     public void setQntStoque(int qntStoque) {
